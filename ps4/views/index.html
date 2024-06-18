@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+</head>
+<body>
+    <h1>Weather Application</h1>
+    <form id="weatherFormPromise" method="POST" action="/ps4/weather-promise">
+        <label for="location">City:</label>
+        <input type="text" id="location" name="location" required>
+        <button type="submit">Get Weather with Promise</button>
+    </form>
+    <form id="weatherFormAsync" method="POST" action="/ps4/weather-async">
+        <label for="location">City:</label>
+        <input type="text" id="location" name="location" required>
+        <button type="submit">Get Weather with Async/Await</button>
+    </form>
+    <form id="weatherFormCallback" method="POST" action="/ps4/weather-callback">
+        <label for="location">City:</label>
+        <input type="text" id="location" name="location" required>
+        <button type="submit">Get Weather with Callback</button>
+    </form>
+</body>
+</html>
