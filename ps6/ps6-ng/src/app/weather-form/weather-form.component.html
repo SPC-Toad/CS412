@@ -1,0 +1,6 @@
+<form (ngSubmit)="getWeather()">
+    <label for="location">City:</label>
+    <input type="text" id="location" [(ngModel)]="location" name="location" required>
+    <button type="submit">Get Weather</button>
+  </form>
+  
